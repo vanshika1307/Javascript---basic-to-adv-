@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        num = 22;
+        function oddEven(num)
+        {
+            if (num % 2 == 0) {
+                return "Even";
+            } else {
+                return "Odd";
+            }
+          
+        }
+          console.log (oddEven(22));
+            console.log (oddEven(23));
+            // Function to find the larger of two numbers
+            function largeNum (num1, num2) {
+                if (num1 >= num2) {
+                    return num1;
+                } else {
+                    return num2;
+                }
+            }
+            console.log(largeNum(10, 20));
+            console.log(largeNum(20, 20));
+            console.log(largeNum(50, 10));
+
+            //Create method to convert degree to fahrenheit
+            function degreeToFahrenheit(degree) {
+                return (degree * 9/5) + 32;
+            }
+            console.log(degreeToFahrenheit(0)); // 32
+            console.log(degreeToFahrenheit(100)); // 212    
+    </script>
+</body>
+</html>
