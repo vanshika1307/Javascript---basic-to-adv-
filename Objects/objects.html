@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name : "Vanshika" ,
+            age : 21 , 
+            occupation : "Software Engineer",
+        };
+        console.log(user);
+        console.log(user.occupation);
+        console.log(user.name);
+        console.log(user.age);
+        console.log(user["name"]); // replaces the value instead of directly accessing it
+        user.age = 22;
+        console.log(user.age);
+
+
+        // nested object
+        let user1 = {
+            name : "Vanshika" ,
+            age : 21 , 
+            occupation : "Software Engineer",
+            address : {
+                city : "Mumbai",
+                state : "Maharashtra",
+                country : "India",
+            },
+            //function declaration 
+            displayOccupation : function() {
+                console.log (`occupation of the user is  ${this.occupation}`)
+            }
+        };
+        //function in object 
+         user1.displayOccupation();
+
+         // object copies just the references not the real value 
+         let p = {x :"vanshika"};
+         let q = {x :"vanshika"};
+         console.log(p==q);
+         console.log(p===q);
+         // output is false for both cases as it checks the reference not the real value 
+    </script>
+</body>
+</html>
